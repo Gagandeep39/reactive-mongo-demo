@@ -1,0 +1,28 @@
+### Find All
+GET http://localhost:8085/api/v1/blog
+
+### Find By Query
+GET http://localhost:8085/api/v1/blog/find?blogTitle=test
+
+### Find By ID
+GET http://localhost:8085/api/v1/blog/5fcbe8f6241cd21f0eab88c8
+
+### Create blog
+POST http://localhost:8085/api/v1/blog
+Content-Type: application/json
+
+{
+  "title": "A lonely Guy",
+  "content": "I wish I had someone in my life",
+  "author": "Gagandeep Singh"
+}
+
+### Update blog
+PUT http://localhost:8085/api/v1/blog/5fcbe8f6241cd21f0eab88c8
+Content-Type: application/json
+
+{
+  "title": "A lonely Guy",
+  "content": "I wish I had someone in my life",
+  "author": "Gagandeep Singh"
+}
